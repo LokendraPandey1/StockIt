@@ -149,24 +149,6 @@ The continuous tracker writes logs to `continuous_tracker.log`. The ETL runner w
 - `NEWS_API_KEY` — (optional) NewsAPI.org API key
 - `MARKETAUX_API_KEY` — (optional) Marketaux API key
 
----
-
-## Troubleshooting
-
-- Import errors for a missing module: install it with `pip install <module>` (e.g., `yfinance`).
-- Database authentication or connection failures: ensure PostgreSQL is running and `.env` values are correct.
-- API fetch errors / rate limits: API providers (Alpha Vantage, NewsAPI, Marketaux) often have rate limits — use keys responsibly, and consider switching to free data sources like Yahoo Finance when possible.
-
----
-
-## Next steps / Suggested improvements
-
-- Add `yfinance` to `requirements.txt` (used by `yahoo_finance_fetcher.py`).
-- Add a `.gitignore` entry for `.env` and database or log artifacts if not present.
-- Add unit tests and CI (GitHub Actions) for ETL and fetchers.
-- Add Docker support for easier, portable DB + app setup.
-
----
 
 If you'd like, I can also:
 
